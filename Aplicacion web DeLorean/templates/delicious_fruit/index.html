@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DeLorean</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css" />
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+
+<div id="header_left">
+
+</div>  
+<div id="header_middle">
+<h1>De<span class="red">Lorean</span> </h1>
+</div>  
+
+</div>
+</div>
+
+<div id="left">
+<h4><span class="menu_first_letter">{{I}} Sesión</span></h4>
+
+<div id="form2">
+
+<form action="/" method="post" id='formulario'>{% csrf_token %}
+      {{formulario|safe}}
+</form><a href="logout">{{salir|safe}}</a>
+</div>
+<br></br>
+
+<h4>Menu</h4>
+
+
+<div id="navcontainer">
+<ul id="navlist">
+<li><a href="/todas">Todas</a></li>
+<li class="green"><a href="/ayuda">Ayuda </a></li>
+<li><a href="/incidencias">{{Incidencias_menu}}</a></li>
+<li> <a href="/" id="current">{{INICIO}}</a></li>
+<li> <a href={{canalrss}}>{{rss}}</a></li>
+</ul>
+</div>
+
+<h4>
+
+<div id="formule">
+<a>{{Cambia_Pagina}}</a>
+<form action="" method="POST" id='Personaliza'>{% csrf_token %}
+      {{Personaliza|safe}}
+</div>
+<br></br>
+</h4>
+</div>
+
+<div id="right"<div id="rss"onclick="location.href='/rss'">
+
+<div class="date_box">
+<div class="date_box_month"></div>
+<div class="date_box_day"></div>
+</div>
+<h3>{{Titulo1}}</h3><form action="" method="POST" id='Recarga'>{% csrf_token %}
+      {{Recarga|safe}} 
+
+<h2 id="idea">{{Total}}  {{numero}}  {{Titulo}} </h2>
+
+
+
+  <blockquote id = 'paginas'><p class="quote">{% for elemento in Paginas %}
+			<ul>
+			<li><a href=/{{elemento.recursop}}>{{elemento.titulo}}</b></br></a>  Usuario: {{elemento.recursop}} </br> Descripcion: {{elemento.contenido}}</li>
+			</ul>
+			{% endfor %}</p>
+      <p class="quote">{% for i in incidencias_usuario %}
+      <ul>
+      <li> <b>Incidencia: {{i.id}}</b><span style='color:black'>Tipo: {{i.tipo}} Provincia: {{i.provincia}}
+       Carretera: {{i.carretera}} Publicada en: {{i.fechahora}} {{i.autonomia}}{{i.matricula}}{{i.causa}}{{i.poblacion}}{{i.nivel}} {{i.carretera}} {{i.inicial}}{{i.final}} {{i.sentido}}{{i.hacia}}</span><p>
+      </ul>
+      {% endfor %}</p>
+      <p class="quote">{% for i in incidencias_seleccion %}
+      <ul>
+      <li><form action='' method='POST'><input type="checkbox" name="Incidence" value={{i.id}}> Guardar</form>
+      <b>Incidencia: {{i.id}}</b><span style='color:black'>Tipo: {{i.tipo}} Provincia: {{i.provincia}}
+       Carretera: {{i.carretera}} Publicada en: {{i.fechahora}} {{i.autonomia}}{{i.matricula}}{{i.causa}}{{i.poblacion}}{{i.nivel}} {{i.carretera}} {{i.inicial}}{{i.final}} {{i.sentido}}{{i.hacia}}</span><p>
+      </ul>
+      {% endfor %}</p> <p>{{ayuda}}</p> <p>{{parrafadaIni}}</p> <p>{{parrafadaTodas}}</p> <p>{{parrafadaInci}}</p> <p>{{parrafadarss}}</p></blockquote>
+
+
+  
+  
+  
+  <div class="date_box">
+<div class="date_box_month"></div>
+<div class="date_box_day"></div>
+</div>
+
+
+<h3>{{10_Incidencias}} </h3>
+  
+  <blockquote id = 'Incidences'><p class="quote">{% for i in Incidences %}
+      <ul>
+      <li> <b>Incidencia: {{i.id}} </b>Tipo: {{i.tipo}} Provincia: {{i.provincia}}
+       Carretera: {{i.carretera}} Publicada en: {{i.fechahora}} {{i.autonomia}}{{i.matricula}}{{i.causa}}{{i.poblacion}}{{i.nivel}} {{i.carretera}} {{i.inicial}}{{i.final}} {{i.sentido}}{{i.hacia}}</p>
+      </li>
+      </br>
+      </ul>
+      {% endfor %}</p></blockquote>
+
+</div>
+
+<div id="footer">Copyright &copy; 2014 Jona Santana. All Rights Reserved. | <a href="http://www.csstemplateheaven.com">www.csstemplateheaven.com</a> </div>
+
+
+</body>
+</html>

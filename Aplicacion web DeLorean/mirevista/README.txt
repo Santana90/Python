@@ -1,0 +1,27 @@
+Servicios y aplicaciones telemáticas
+Alberto Morata Corrales
+amoratac
+
+Usuarios:
+			pepe: pepe
+			marta: marta
+			invitado: invitado
+
+Canales:
+			as: http://www.as.com/rss/feed.html?feedId=60
+			wordpress: http://en.blog.wordpress.com/feed/
+			elpais: http://ep00.epimg.net/rss/elpais/portada.xml
+
+Resumen:
+
+Todas las partes funcionan, menos a la hora de elegir noticias para mi revista,
+que no lo he implementado.
+Básicamente, puedes entrar como usuario logueado o como invitado, siendo invitado un usuario
+con menos posibilidades. Si eres usuario loged, puedes cambiar el título de tu revista, y la
+apariencia de tu página personal (el fondo).
+También está implementado el meter un nuevo canal a través de su URL.
+A la hora de mostrar los canales y las noticias, he puesto sólo o bien la url, o el título de
+la noticia en cuestión.
+
+URL del vídeo:
+				https://vimeo.com/68817242

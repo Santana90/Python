@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DeLorean</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+
+<div id="header_left">
+<h1>De<span class="red">Lorean</span></h1>
+
+</div>  
+</div>
+
+<div id="left">
+
+<h4><span class="menu_first_letter">{{I}} de Sesión</span></h4>
+
+<div id="form2">
+
+<form action="/" method="post" id='formulario'>{% csrf_token %}
+      {{formulario|safe}}
+</form><a href="logout">{{salir|safe}}</a>
+</div>
+<br></br>
+
+<h4>Menu</h4>
+
+
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="/" id="current">{{INICIO}}</a></li>
+<li class="green"><a href="/Ayuda">Ayuda</a></li>
+<li><a href="/Todas">Todas</a></li>
+</ul>
+</div>
+
+<h4>{{Personaliza}} </h4>
+
+
+
+<a>Formulario para cambiar apariencia</a></div>
+
+<div id="right">
+
+<div class="date_box">
+<div class="date_box_month"></div>
+<div class="date_box_day"></div>
+</div>
+<h3>{{Titulo1}}</h3>
+
+
+  <blockquote><p class="quote">Incidencia</p></blockquote>
+  
+  <blockquote><p class="quote"> incidencia2</p></blockquote>
+  
+  <p class="read_more"><a href="/incidencias">  Ir a incidencias</a> </p>
+  
+  
+  <div class="date_box">
+<div class="date_box_month"></div>
+<div class="date_box_day"></div>
+</div>
+
+
+<h3>Paginas Personales </h3>
+  
+  <blockquote><p class="quote">PAGINA DE MARTA</p></blockquote>
+  
+  <blockquote><p class="quote"> PAGINA DE PEPE </p></blockquote>
+  
+  
+</div>
+
+<div id="footer">Copyright &copy; 2014 Jona Santana. All Rights Reserved. | <a href="http://www.csstemplateheaven.com">www.csstemplateheaven.com</a> </div>
+
+
+</body>
+</html>

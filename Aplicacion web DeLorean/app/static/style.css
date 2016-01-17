@@ -1,0 +1,363 @@
+/* CSS Document av Dieter Schneider 2007 */
+
+* {margin: 0; padding: 0;}
+
+/************************************* Main structure *************************/
+
+body {
+  	background:url(images/fondo.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 62.5%;
+	background-color:#D8D8D8;
+
+}
+
+
+#container {
+	font-size: 1.2em;
+	border-top: 1px solid white;
+}
+
+#header {
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 300px;
+	padding-top: 20px;
+	margin-left: auto;
+}
+
+#header_left {
+	float: left;
+	width: 326px;
+	height: 206px;
+}
+
+#header_middle {
+	float: left;
+	width: 326px;
+	height: 206px;
+}
+#header_rigth {
+	float: left;
+	width: 326px;
+	height: 206px;
+	margin-left: 365px;
+}
+
+
+#rss {
+	background-image: url(images/rss.jpg);
+	cursor:pointer;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+
+}
+#left {
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	float:left;
+	width: 225px;
+	margin-left: 45px;
+	margin-top: 50px;
+}
+
+#right {
+	margin-left: 340px;
+	margin-top: 70px;
+	margin-right: 50px;
+}
+
+#footer {
+	clear: both;
+	margin-left: 340px;
+	margin-right: 50px;
+	margin-top: 40px;
+	padding: 20px;
+	text-align: center;
+	border-top: 1px dotted #CCCCCC;
+}
+#form2{
+	color:#3B170B;
+	margin-bottom: 15px;
+   margin-top: 15px;
+   font-size: 1.35em
+
+}
+.date_box {
+	height: 51px;
+	width: 52px;
+	float: left;
+}
+
+.date_box_month {
+	padding-top: 6px;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 3px;
+	text-align: center;
+	color: #75a006;
+}
+
+.date_box_day {
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 3px;
+	text-align: center;
+	font-style: italic;	
+	color: #654040;
+}
+
+/******************************* Text and image formatting *******************************/
+
+p {color:#F5F6CE;
+	margin-bottom: 15px;
+   margin-top: 15px;
+   font-size: 1.35em;
+
+
+}
+
+p.quote:first-letter 
+{
+	color:#3B170B ;
+	font-size:xx-large;
+	margin-top: 50px;
+	font-size: 2.5em;
+    padding-right: 2px;
+   
+}
+
+h1 {
+	color: #F5FFFA;
+	margin-top: 25px;
+	margin-left: 40px;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 2.6em;
+}
+
+.red {color: #FF4500;}
+
+h2 {
+	color: black;
+	margin-left: 120px;
+	font-size: 1.8em;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+h3 {
+	height: 31px;
+	padding-top: 20px;
+	padding-left: 75px;
+	font-size: 2.0em;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+
+h4 {
+	width: 210px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-color: #CEAC86;
+	border-bottom-color: #CEAC86;
+	font-size: 1.8em;
+	color:black;
+}
+
+blockquote {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	font-style: italic;
+}
+#paginas{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	border: 1px dotted ;
+	font-style: italic;
+	color:#F5F6CE;
+	font-size: 1.6em;
+
+}
+
+#Incidences{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	font-style: italic;
+	color:black;
+	font-size: 1.3em;
+}
+.read_more {
+	padding: 3px;
+	text-align: right;
+	font-weight: bold;
+	font-style: italic;
+}
+
+img {border: none;}
+
+.float_left {float: left;
+              margin-right: 10px;}
+			  
+.float_right {float: right;
+              margin-left: 10px;}
+			 
+a:link {color: black; text-decoration: none;}     /* unvisited link */
+a:visited {color: #83A956; text-decoration: none;}  /* visited link */
+a:hover {color: #821115; text-decoration: none;}   /* mouse over link */
+/*color para el recuadro del login*/
+a:active {color: orange; text-decoration: none;}   /* selected link */
+
+/********************************* Navigation **********************************/
+
+#navcontainer { }
+
+#navcontainer ul
+{
+	list-style-type: none;
+	font-weight: bold;
+	color: #990000;
+}
+
+#navcontainer a
+{
+	display: block;
+	padding-top: 17px;
+	padding-left: 37px;
+	width: 182px;
+	background-repeat: repeat-x;
+	height: 27px;
+}
+
+#navcontainer a:link, #navlist a:visited
+{
+color: #F5F6CE;
+text-decoration: none;
+font-size: 1.3em;
+}
+
+#navcontainer a:hover 
+{	
+	
+	color: #562930;
+}
+
+/**************************************** Form elements member login ****************************/
+
+
+p.welcome {
+	font-size: 1.5em;
+	text-align: middle;
+	margin-right: 30px;
+	margin-left: 35px;
+	margin-bottom: 0px;
+	margin-top: 25px;
+	color: #19070B;
+}
+p.bye{
+	font-size: 1.6em;
+	text-align: middle;
+	margin-right: 30px;
+	margin-left: 1px;
+	margin-bottom: 0px;
+	margin-top: 25px;
+	color: ;
+}
+
+
+
+form {
+	margin-top: 15px;
+	margin-left: 1px;
+}
+
+
+
+input.fields {display: block;
+        width: 140px;
+        background: url(images/input_bg.png);
+		border-top: 1px solid #E3E4E9;
+		border-left: 1px solid #E3E4E9;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+		margin-top: 3px;
+	    margin-bottom: 3px;
+	    color:orange;
+}
+
+label {
+	color: white;
+	font-style: italic;
+}
+
+.submit_button {
+	margin-top: 15px;
+	padding: 2px;
+	background-color: #EAF4D9;
+	float: right;
+	margin-right: 40px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-bottom: 2px solid #E3E4E9;
+	border-right: 2px solid #E3E4E9;
+}
+
+/**************************************** extra classes: contact us ****************************/
+
+form.contact_us {
+	width: 190px;
+	margin-top: 15px;
+	margin-left: 0px;
+	padding: 15px;
+	background-color: #FBF9F4;
+	background-image: url(images/form_bg.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+input.fields_contact_us {display: block;
+        width: 185px;
+        background: url(images/input_bg.png);
+		border-top: 1px solid #E3E4E9;
+		border-left: 1px solid #E3E4E9;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+		margin-top: 3px;
+	    margin-bottom: 3px;}
+
+textarea {width: 185px;
+          background: url(images/input_bg.png);
+          border-top: 1px solid #E3E4E9;
+		  border-left: 1px solid #E3E4E9;
+		  border-bottom: 1px solid white;
+		  border-right: 1px solid white;
+
+          margin-top: 3px;}
+
+.submit_button_contact {
+	margin-top: 15px;
+	padding: 2px;
+	background-color: #EAF4D9;
+}
